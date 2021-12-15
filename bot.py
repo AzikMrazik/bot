@@ -9,5 +9,11 @@ logging.basicConfig(level=logging.INFO)
 async def c1(message: types.Message):
     await message.reply("Test 1")
 
+async def c2(message: types.Message):
+    await message.reply("Test 2")
+
+dp.register_message_handler(c2, commands="test2")
+
+
 if __name__ == "__main__":
     executor.start_polling(dp, skip_updates=True)
