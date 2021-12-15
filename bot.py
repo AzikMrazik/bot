@@ -12,7 +12,7 @@ async def c1(message: types.Message):
 async def c2(message: types.Message):
     await message.reply("😘es三t 2")
 
-dp.register_message_handler(c2, commands="test2")
+dp.register_message_handler(c2, commands=["😘", "c2"])
 
 
 if __name__ == "__main__":
