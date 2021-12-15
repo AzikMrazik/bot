@@ -6,6 +6,10 @@ bot = telebot.TeleBot("5097465180:AAFezAkYbiVyBPwL1ujdcYG2PuJh8iYYpzs")
 def send_welcome(message):
 	bot.reply_to(message, "Howdy, how are you doing?")
 
+@bot.message_handler(content_types=["text"])
+def echo_all(message):
+	bot.reply_to(message, message.text)
+
 @bot.message_handler(func=lambda message: True)
 def echo_all(message):
 	bot.reply_to(message, message.text)
