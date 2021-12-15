@@ -6,7 +6,7 @@ bot = telebot.TeleBot("5097465180:AAFezAkYbiVyBPwL1ujdcYG2PuJh8iYYpzs")
 def send_welcome(message):
 	bot.reply_to(message, "Howdy, how are you doing?")
 
-@bot.message_handler(content_types=["text"])
+@bot.message_handler(content_types=["sticker"])
 def echo_all(message):
 	bot.reply_to(message, message.text)
 
