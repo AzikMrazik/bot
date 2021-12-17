@@ -7,7 +7,7 @@ logging.basicConfig(level=logging.INFO)
 
 @dp.message_handler(commands="test1")
 async def c1(message: types.Message):
-    await message.reply("Test 1")
+    await message.reply("🎲")
 
 async def c2(message: types.Message):
     await message.answer("😘es三t 2")
