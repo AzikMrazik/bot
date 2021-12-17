@@ -17,7 +17,7 @@ dp.register_message_handler(c2, commands=["😘", "c2"])
 
 @dp.message_handler(commands="dice")
 async def cmd_dice(message: types.Message):
-    await message.bot.send_message(-1001644121828, emoji="🎲")
+    await message.bot.send_message(-1001644121828, "🎲")
 
 if __name__ == "__main__":
     executor.start_polling(dp, skip_updates=True)
