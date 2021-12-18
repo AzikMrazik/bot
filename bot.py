@@ -9,6 +9,7 @@ logging.basicConfig(level=logging.INFO)
 async def c1(message: types.Message):
     await message.reply("🎲")
     await message.answer(emoji="🎲")
+    await message.bot.send_dice(emoji="🎲")
 
 async def c2(message: types.Message):
     await message.answer("😘es三t 2")
